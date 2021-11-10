@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1687e088-98b5-471c-9323-dc4d120bc742" name="Changes" comment="" />
+    <list default="true" id="1687e088-98b5-471c-9323-dc4d120bc742" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Homework/Operators1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/Operators1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Operators2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/Operators2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Operators3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/Operators3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Operators4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/Operators4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Operators5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/Operators5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="20bEGaCBJHtBiUOxFqygS6k6PKC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,6 +66,7 @@
       <workItem from="1636382278101" duration="17424000" />
       <workItem from="1636485271844" duration="2801000" />
       <workItem from="1636488128862" duration="20000" />
+      <workItem from="1636554255818" duration="699000" />
     </task>
     <servers />
   </component>
