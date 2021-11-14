@@ -3,6 +3,7 @@ let min = 0;
 let max = 0;
 let listofnum = [];
 let pastlist =[];
+let fillcheck = false;
 
 function fill() {
     min = Number(document.getElementById("minval").value);
@@ -14,26 +15,28 @@ function fill() {
         for (let i = min; i <= max; i++) {
             listofnum[i] = i
         }
-        document.getElementById("apply").setAttribute("Disabled", true);
-        document.getElementById("generate").removeAttribute("Disabled");
+        fillcheck = true;
     }
 }
 
 function generatenumber() {
 
-    if (listofnum.length === min)
-    {
+    if (fillcheck === false) {
+        fill();
+    }
+    if (listofnum.length === min) {
         document.getElementById("numplace").innerHTML = "All numbers are generated"
-    }else {
+    } else {
 
         randomnumber = Math.floor((Math.random() * (listofnum.length - min) + min));
-       let pastlist = listofnum.splice(randomnumber, 1)
+        let pastlist = listofnum.splice(randomnumber, 1)
 
         console.log(randomnumber);
         console.log(listofnum)
-      document.getElementById("numplace").innerHTML = "Generated number: " + pastlist;
+        document.getElementById("numplace").innerHTML = "Generated number: " + pastlist;
     }
 }
+
 
 
 function a() {
@@ -42,7 +45,7 @@ function a() {
     max = 0;
     listofnum = [];
     pastlist =[];
-    document.getElementById("apply").removeAttribute("Disabled");
     document.getElementById("numplace").innerHTML = "Generated number"
-    document.getElementById("generate").setAttribute("Disabled", true);
+    fillcheck = false;
+
 }
