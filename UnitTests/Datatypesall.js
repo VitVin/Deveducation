@@ -408,12 +408,10 @@ function func4(chis) {
     let third = '';
     let finchis = '';
     let num = 0;
-
     sepchis = chis.split(' ')
     first = sepchis[0];
     second = sepchis[1];
     third = sepchis[2];
-
     let a2 = ['', '',
         'двадцать',
         'тридцать',
@@ -434,7 +432,6 @@ function func4(chis) {
         'семьсот',
         'восемьсот',
         'девятьсот'];
-
     let a1 = ['ноль', 'один',
         'два',
         'три',
@@ -455,7 +452,6 @@ function func4(chis) {
         'восемнадцать',
         'девятнадцать',
     ]
-
     let three = function () {
         if (a3.includes(first)) {
             finchis += a3.indexOf(first);
@@ -467,7 +463,6 @@ function func4(chis) {
             finchis += a1.indexOf(third);
         }
     }
-
     let two = function () {
         if (a2.includes(first)) {
             finchis += a2.indexOf(first);
@@ -478,15 +473,12 @@ function func4(chis) {
         if (a2.includes(second) && a3.includes(first)) {
             finchis += a2.indexOf(second) + '0';
         }
-
         if (a1.includes(second) && a1.indexOf(second) < 10 && a3.includes(first)) {
             finchis += '0';
             finchis += a1.indexOf(second);
         } else if (a1.includes(second)) {
             finchis += a1.indexOf(second)
         }
-
-
     }
 
     let one = function () {
@@ -502,10 +494,8 @@ function func4(chis) {
         if (a2.includes(first)) {
             finchis += a2.indexOf(first)
             finchis += '0';
-
         }
     }
-
 
     switch (sepchis.length) {
         case(3):
@@ -518,7 +508,8 @@ function func4(chis) {
             one();
             break;
     }
-
     num = +finchis
     return num;
 }
+
+
