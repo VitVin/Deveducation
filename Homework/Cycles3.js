@@ -1,17 +1,17 @@
 `Найти корень натурального числа с точностью до целого (рассмотреть вариант
 последовательного подбора и метод бинарного поиска)`
+function  cyc3(num) {
 
-let num = 81;
-for (let i = 1; i*i<=num; i++)
-{
-    let slezna = i+1;
-      if(slezna*slezna>num)
-      {
-          console.log(i)
-      }
+    for (let i = 1; i * i <= num; i++) {
+        let slezna = i + 1;
+        if (slezna * slezna > num) {
+            console.log(i)
+        }
+    }
 }
+cyc3(81)
+function binarySearch(num){
 
-function binarySearch(){
     let start = 0;
     let end = num;
     while (start <= end) {
@@ -33,4 +33,4 @@ function binarySearch(){
 
     }
 
-binarySearch();
+binarySearch(81);

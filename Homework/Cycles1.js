@@ -1,12 +1,14 @@
 `Найти сумму четных чисел и их количество в диапазоне от 1 до 99`
-let count = 0;
-let sum = 0;
-for (let i = 1; i<=99; i++)
-{
-    if (i % 2 == 0) {
-        count += 1;
-        sum = sum+ i;
+function cyc1() {
+    let count = 0;
+    let sum = 0;
+    for (let i = 1; i <= 99; i++) {
+        if (i % 2 == 0) {
+            count += 1;
+            sum = sum + i;
+        }
     }
+    console.log('Количество четных чисел диапазона', count, ' сумма четных чисел диапазона', sum);
 }
-console.log('Количество четных чисел диапазона', count);
-console.log('сумма четных чисел диапазона', sum);
+
+cyc1()
