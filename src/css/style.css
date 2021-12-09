@@ -1,0 +1,105 @@
+
+body
+{
+background-image: url("Backgroundimage.jpg") ;
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+#picture {
+    width: 550px;
+    height: 550px;
+    border-radius: 30px;
+    display: flex;
+    margin: auto;
+    object-fit: fill;
+    object-position: center;
+    animation: boxshadowanimation 15s  infinite  alternate;
+    animation-timing-function: linear;
+}
+
+
+
+#navigationform
+{
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input
+{
+    transition: 1s all;
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 255, 255, 0.37);
+    border-style: none;
+    border-radius: 50px;
+    animation: backgroundanimation 15s  infinite  alternate;
+    animation-timing-function: ease;
+}
+
+#play
+{
+    border-radius: 10px;
+}
+
+
+input:hover
+{
+    animation: none;
+    box-shadow: 0 0 20px #06e3e8;
+    background: rgb(10, 197, 231);
+}
+
+input:active
+{
+    transition: 100ms;
+    box-shadow: 0 0 20px #05f516;
+    background: rgb(10, 197, 231);
+    border-radius: 50px;
+}
+
+
+
+@keyframes boxshadowanimation {
+    20%{
+        box-shadow: 0 0 20px rgba(17, 138, 222);
+    }
+    40%{
+        box-shadow: 0 0 20px rgba(23, 225, 188);
+    }
+    60%{
+        box-shadow: 0 0 20px rgba(12, 75, 220);
+    }
+    80%
+    {
+        box-shadow: 0 0 20px rgba(40, 12, 220);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(23, 210, 225);
+    }
+}
+
+@keyframes backgroundanimation
+{
+    20%{
+        background: rgb(46, 160, 243);
+        box-shadow: 0 0 20px rgba(23, 210, 225, 0.6);
+    }
+    40%{
+        background: rgb(0, 244, 252);
+        box-shadow: 0 0 20px rgba(40, 12, 220, 0.6);
+    }
+    100% {
+        background: rgb(0, 88, 255);
+        box-shadow: 0 0 20px rgba(23, 225, 188, 0.6);
+    }
+}
