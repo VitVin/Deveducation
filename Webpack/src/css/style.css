@@ -1,0 +1,88 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #ffffff;
+    overflow: hidden ;
+
+}
+
+
+#mainColumn
+{
+    margin-top: 10%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    font-size: 15px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1872b2;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.item
+{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.71);
+    flex-shrink: 0;
+    resize: none;
+    transition: all 1s ease ;
+    border-radius: 50px;
+    outline: none;
+    border-width: 0;
+    box-shadow: 0 0 20px rgb(21, 127, 211);
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+
+.item:disabled
+{
+    transition: all 1s ease ;
+    box-shadow: 0 0 20px rgb(211, 21, 21);
+}
+
+.btn
+{
+    margin-left: 17%;
+    border-radius: 10px;
+    border-width: 0px;
+    transition: all 1s ease;
+    background-color: rgba(255, 255, 255, 0.34);
+    width: 150px;
+    height: 25px;
+    color: #ffffff;
+    box-shadow:0 0 20px rgb(21, 127, 211);
+}
+
+.btn:active
+{
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.99);
+    box-shadow:0 0 10px rgb(59, 238, 8);
+}
+
+@keyframes draganimation {
+    0%{
+
+    }
+    100%{
+        box-shadow: 0 0 20px green;
+    }
+}
