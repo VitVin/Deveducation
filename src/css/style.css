@@ -1,0 +1,72 @@
+body
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #ffffff;
+    overflow: hidden ;
+}
+
+.filters
+{
+    margin-top: 10%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #1872b2;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+#diagram
+{
+    width: 500px ;
+    height: 500px ;
+    background-color: white;
+}
+
+.filters
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#jobs
+{
+    width: 300px;
+    height: 300px;
+}
+
+.btn
+{
+    margin-left: 17%;
+    border-radius: 10px;
+    border-width: 0px;
+    transition: 1s ease;
+    background-color: rgba(255, 255, 255, 0.34);
+    width: 150px;
+    height: 25px;
+    color: #ffffff;
+    box-shadow:0 0 20px rgb(21, 127, 211);
+}
+
+.btn:active
+{
+    transition: 100ms ease;
+    background: rgba(255, 255, 255, 0.99);
+    box-shadow:0 0 10px rgb(59, 238, 8);
+}
+
+label
+{
+    color: white;
+}
