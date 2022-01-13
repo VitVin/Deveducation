@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="filters">
+        <label for="country">Choose a country</label>
+        <select name="country" id="country" class="selector">
+            <option value="ru">ru</option>
+            <option value="de">de</option>
+            <option value="fr">fr</option>
+            <option value="in">in</option>
+            <option value="it">it</option>
+            <option value="pl">pl</option>
+            <option value="us">us</option>
+        </select>
+        <label for="jobs">Choose a job</label>
+        <select name="job" id="jobs" class="selector" multiple></select>
+    <div class="select">
+        <label for="type">Choose a type</label>
+        <select name="type" id="type" class="selector">
+            <option value="history">history</option>
+            <option value="histogram">histogram</option>
+        </select>
+    </div>
+    <button id="apply" class="btn">Filter</button>
+</div>
+<canvas id="diagram"></canvas>
+
+</body>
+</html>
